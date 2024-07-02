@@ -12,10 +12,12 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"test:integration": "playwright test",
-		"test:unit": "vitest"
+		"test:unit": "vitest",
+		"slicemachine": "start-slicemachine"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
+		"@slicemachine/adapter-sveltekit": "^0.3.42",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
@@ -26,6 +28,7 @@
 		"globals": "^15.0.0",
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
+		"slice-machine-ui": "^2.2.1",
 		"svelte": "^4.2.7",
 		"svelte-check": "^3.6.0",
 		"tslib": "^2.4.1",
@@ -34,5 +37,9 @@
 		"vite": "^5.0.3",
 		"vitest": "^1.2.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@prismicio/client": "^7.6.0",
+		"@prismicio/svelte": "^1.2.0"
+	}
 }
