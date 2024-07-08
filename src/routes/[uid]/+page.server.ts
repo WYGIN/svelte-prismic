@@ -1,6 +1,5 @@
 import { createClient } from '$lib/prismicio';
 
-// @ts-ignore
 export async function load({ params, fetch, cookies }) {
 	const client = createClient({ fetch, cookies });
 
